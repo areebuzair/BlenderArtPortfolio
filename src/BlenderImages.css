@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ddd;
+}
+
+h1 {
+  text-align: center;
+}
+
+.imagesContainer {
+  display: grid;
+  grid-template-columns: auto;
+  place-items: center;
+}
+
+@media only screen and (min-width:700px) {
+
+  .imagesContainer {
+    grid-template-columns: auto auto;
+  }
+
+}
+
+@media only screen and (min-width:1000px) {
+
+  .imagesContainer {
+    grid-template-columns: auto auto auto;
+  }
+
+}
+
+@media only screen and (min-width:1300px) {
+
+  .imagesContainer {
+    grid-template-columns: auto auto auto auto;
+  }
+
+}
+
+@media only screen and (min-width:1600px) {
+
+  .imagesContainer {
+    grid-template-columns: auto auto auto auto auto;
+  }
+
+}
+
+@media only screen and (min-width:2000px) {
+
+  .imagesContainer {
+    grid-template-columns: auto auto auto auto auto auto;
+  }
+
+}
+
+/* @media only screen and (min-width:2200px){
+
+  .imagesContainer{grid-template-columns:auto auto auto auto auto auto auto;}
+
+} */
+@media only screen and (min-width:2300px) {
+
+  .imagesContainer {
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  }
+
+}
+
+.image {
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+}
+.imageZoom{
+  position: fixed;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.image, .imageZoom {
+  color: white;
+  background-color: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.image:after,
+.image:before,
+.imageZoom:after,
+.imageZoom:before {
+  display: block;
+  margin: 2px;
+  text-align: right;
+  opacity: 0;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 0px black,
+
+    -1px 1px 0px black,
+
+    1px -1px 0px black,
+
+    -1px -1px 0px black;
+  transition: .5s;
+
+}
+
+.image:before, .imageZoom:before {
+  content: attr(data-name);
+}
+
+.image:after, .imageZoom:after {
+  content: attr(data-time);
+}
+
+.image:hover:after,
+.image:hover:before,
+.imageZoom:hover:after,
+.imageZoom:hover:before{
+  opacity: 1;
+}
+
+@media only screen and (max-width:350px) {
+
+  .image {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 10vmin;
+  }
+
+}

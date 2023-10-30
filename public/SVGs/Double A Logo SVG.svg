@@ -1,0 +1,75 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="body_524592968_10984" width="3175.6801" height="4488.9599">
+
+<g transform="matrix(680.71745 0 0 -680.71745 1587.84 3037.1971)" >
+    <g>
+                <path d="M-2.3204682 0.29295471L-2.2278494 0.14054634L-1.8874775 0.68339612L0.70012111 0.68339612L0.5482502 0.92561085L-1.7356066 0.92561085L-1.4815679 1.33077L-0.72760551 1.33077L-0.570212 1.5817926L-1.3241744 1.5817926L3.1086244E-15 3.693682L1.3241744 1.5817926L-0.13681806 1.5817926L-0.29421157 1.33077L1.4815679 1.33077L1.7356066 0.92561085L0.98164413 0.92561085L1.133515 0.68339612L1.8874775 0.68339612L2.2278494 0.14054634L2.3204682 0.29295471L2.7755575E-15 3.9938056L-2.3204682 0.29295471" stroke="#FF0000" stroke-width="0" stroke-opacity="1" fill="#FF0000" fill-rule="evenodd" fill-opacity="1" />
+            <path d="M-2.3204682 0.29295471L3.5527136E-15 3.9938056" stroke="#FF0000" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <g>
+                <path d="M-1.3241744 1.5817926L-1.1301897 1.5817926L3.5527136E-15 3.3843011L3.5527136E-15 3.693682L-1.3241744 1.5817926M-1.7356066 0.92561085L-1.5416218 0.92561085L-1.3454675 1.2384519L-1.4815679 1.33077L-1.7356066 0.92561085M-2.2278494 0.14054634L-2.0338646 0.14054634L-1.7546088 0.58592375L-1.8874775 0.68339612L-2.2278494 0.14054634M-0.7612372 0.58592375L-0.92522832 0.58592375L-1.2077999 0.13525813L-1.0438087 0.13525813L-0.7612372 0.58592375M-0.71224132 0.92561085L-0.5482502 0.92561085L0 1.8L0 2.0615449L-0.71224132 0.92561085" stroke="#AFAFAF" stroke-width="0" stroke-opacity="1" fill="#AFAFAF" fill-rule="evenodd" fill-opacity="1" />
+            </g>
+            <path d="M-2.2278494 0.14054634L-1.8874775 0.68339612" stroke="#FF0000" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M-1.7356066 0.92561085L-1.4815679 1.33077" stroke="#FF0000" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M-1.3241744 1.5817926L3.5527136E-15 3.693682" stroke="#FF0000" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M-2.0338646 0.14054634L-1.7546088 0.58592375" stroke="#AFAFAF" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M-1.5416218 0.92561085L-1.3454675 1.2384519" stroke="#AFAFAF" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M-1.1301897 1.5817926L3.5527136E-15 3.3843011" stroke="#AFAFAF" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <g>
+                <path d="M-0.92522832 0.58592375L-1.1946311 0.58592375L-1.3403949 0.35344906L-1.2077999 0.13525813L-0.92522832 0.58592375M1.7763568E-15 2.0615449L0.30080919 1.5817926L0.570212 1.5817926L4.440892E-15 2.491208L-0.98164413 0.92561085L-0.71224132 0.92561085L1.7763568E-15 2.0615449M1.2077999 0.13525813L1.3403949 0.35344906L0.7854898 1.2384519L0.51608699 1.2384519L1.2077999 0.13525813" stroke="#0013FF" stroke-width="0" stroke-opacity="1" fill="#0013FF" fill-rule="evenodd" fill-opacity="1" />
+            </g>
+            <path d="M-1.3403949 0.35344906L-1.1946311 0.58592375" stroke="#0013FF" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <g>
+                <path d="M0.7612372 0.58592375L0.70012111 0.68339612L-1.8874775 0.68339612L-1.7546088 0.58592375L0.7612372 0.58592375M1.7546088 0.58592375L1.8874775 0.68339612L1.133515 0.68339612L1.1946311 0.58592375L1.7546088 0.58592375M-0.29421157 1.33077L-0.35209586 1.2384519L1.3454675 1.2384519L1.4815679 1.33077L-0.29421157 1.33077M-0.7854898 1.2384519L-0.72760551 1.33077L-1.4815679 1.33077L-1.3454675 1.2384519L-0.7854898 1.2384519" stroke="#5A5A5A" stroke-width="0" stroke-opacity="1" fill="#5A5A5A" fill-rule="evenodd" fill-opacity="1" />
+            </g>
+            <path d="M-0.98164413 0.92561085L0 2.491208" stroke="#0013FF" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M-1.2077999 0.13525813L-0.92522832 0.58592375" stroke="#0013FF" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M-0.71224132 0.92561085L-3.5527136E-15 2.0615449" stroke="#0013FF" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M-1.0438087 0.13525813L-0.7612372 0.58592375" stroke="#AFAFAF" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M-0.5482502 0.92561085L0 1.8" stroke="#AFAFAF" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <g>
+                <path d="M0.13681806 1.5817926L0.30080919 1.5817926L0 2.0615449L0 1.8L0.13681806 1.5817926M0.51608699 1.2384519L0.35209586 1.2384519L1.0438087 0.13525813L1.2077999 0.13525813L0.51608699 1.2384519M1.5416218 0.92561085L1.7356066 0.92561085L1.4815679 1.33077L1.3454675 1.2384519L1.5416218 0.92561085M1.3241744 1.5817926L3.5527136E-15 3.693682L3.6637359E-15 3.3843011L1.1301897 1.5817926L1.3241744 1.5817926" stroke="#464646" stroke-width="0" stroke-opacity="1" fill="#464646" fill-rule="evenodd" fill-opacity="1" />
+            </g>
+            <path d="M3.5527136E-15 3.693682L3.5527136E-15 3.3843011" stroke="#464646" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M0 2.0615449L0 1.8" stroke="#464646" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M-2.2278494 0.14054634L-2.3204682 0.29295471" stroke="#FF0000" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M-1.2077999 0.13525813L-1.3403949 0.35344906" stroke="#0013FF" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M-2.2278494 0.14054634L-2.0338646 0.14054634" stroke="#AFAFAF" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M-1.2077999 0.13525813L-1.0438087 0.13525813" stroke="#AFAFAF" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M2.3204682 0.29295471L3.5527136E-15 3.9938056" stroke="#FF0000" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+                <path d="M1.8874775 0.68339612L1.7546088 0.58592375L2.0338646 0.14054634L2.2278494 0.14054634L1.8874775 0.68339612" stroke="#464646" stroke-width="0" stroke-opacity="1" fill="#464646" fill-rule="evenodd" fill-opacity="1" />
+            <path d="M2.2278494 0.14054634L1.8874775 0.68339612" stroke="#FF0000" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M1.7356066 0.92561085L1.4815679 1.33077" stroke="#FF0000" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M1.3241744 1.5817926L3.5527136E-15 3.693682" stroke="#FF0000" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M2.0338646 0.14054634L1.7546088 0.58592375" stroke="#464646" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M1.5416218 0.92561085L1.3454675 1.2384519" stroke="#464646" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M1.1301897 1.5817926L0 3.3843011" stroke="#464646" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M1.3403949 0.35344906L0.7854898 1.2384519" stroke="#0013FF" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M0.570212 1.5817926L7.1054273E-15 2.491208" stroke="#0013FF" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M1.2077999 0.13525813L0.51608699 1.2384519" stroke="#0013FF" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M0.30080919 1.5817926L3.5527136E-15 2.0615449" stroke="#0013FF" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M1.0438087 0.13525813L0.35209586 1.2384519" stroke="#464646" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M0.13681806 1.5817926L0 1.8" stroke="#464646" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M2.2278494 0.14054634L2.3204682 0.29295471" stroke="#FF0000" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M1.2077999 0.13525813L1.3403949 0.35344906" stroke="#0013FF" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M2.2278494 0.14054634L2.0338646 0.14054634" stroke="#464646" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M1.2077999 0.13525813L1.0438087 0.13525813" stroke="#464646" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M-1.3241744 1.5817926L-0.570212 1.5817926" stroke="#FF0000" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M-0.13681806 1.5817926L1.3241744 1.5817926" stroke="#FF0000" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M-1.4815679 1.33077L-0.72760551 1.33077" stroke="#FF0000" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M-0.29421157 1.33077L1.4815679 1.33077" stroke="#FF0000" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M-1.7356066 0.92561085L0.5482502 0.92561085" stroke="#FF0000" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M0.98164413 0.92561085L1.7356066 0.92561085" stroke="#FF0000" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M-1.8874775 0.68339612L0.70012111 0.68339612" stroke="#FF0000" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M1.133515 0.68339612L1.8874775 0.68339612" stroke="#FF0000" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M-1.3454675 1.2384519L-0.7854898 1.2384519" stroke="#5A5A5A" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M-0.35209586 1.2384519L1.3454675 1.2384519" stroke="#5A5A5A" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M-1.7546088 0.58592375L0.7612372 0.58592375" stroke="#5A5A5A" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M1.1946311 0.58592375L1.7546088 0.58592375" stroke="#5A5A5A" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M-1.8874775 0.68339612L-1.7546088 0.58592375" stroke="#5A5A5A" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M-1.4815679 1.33077L-1.3454675 1.2384519" stroke="#5A5A5A" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M1.4815679 1.33077L1.3454675 1.2384519" stroke="#464646" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+            <path d="M1.8874775 0.68339612L1.7546088 0.58592375" stroke="#464646" stroke-width="0.0012460279" stroke-linecap="round" fill="none" />
+    </g>
+</g>
+</svg>
