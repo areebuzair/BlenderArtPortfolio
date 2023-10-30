@@ -6,6 +6,10 @@ body {
 h1 {
   text-align: center;
 }
+p{
+  text-align: justify;
+  color: #333;
+}
 
 .imagesContainer {
   display: grid;
@@ -119,7 +123,7 @@ h1 {
 }
 
 .image:after, .imageZoom:after {
-  content: attr(data-time);
+  content: "Upload: " attr(data-time);
 }
 
 .image:hover:after,
