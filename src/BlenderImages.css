@@ -84,6 +84,7 @@ p{
   height: 100vh;
   padding-right: 20px;
   box-sizing: border-box;
+  z-index: 10000;
 }
 .image, .imageZoom {
   color: white;
