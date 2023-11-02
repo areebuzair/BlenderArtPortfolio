@@ -1,5 +1,5 @@
-import './BlenderImages.css';
-import IMAGES from './assets/folder_data.json'
+import '../BlenderImages.css';
+import IMAGES from '../assets/folder_data.json'
 import { useState, useEffect } from 'react';
 
 export default function StillImages() {
