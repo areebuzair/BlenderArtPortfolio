@@ -14,9 +14,9 @@ body {
   max-width: 100vw;
   height: 100vh;
   transition: width 0s;
-  background-image: url("../Assets/DigitalMaze.jpg");
+  background-image: url("../Assets/DigitalMaze2.jpg");
   background-attachment: fixed;
-  background-size: 50%;
+  /* background-size: 50%; */
 }
 
 section {
@@ -56,7 +56,7 @@ section {
               0 0 15px blue,
               0 0 20px darkblue;
 }
-h1 {
+h1, h3 {
   text-align: center;
   color: #F0F0F0;
   margin: 0;

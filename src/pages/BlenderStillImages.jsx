@@ -45,7 +45,7 @@ export default function StillImages() {
                     enableScroll();
                     document.querySelector(':root').style.setProperty('--scrollBehavior', 'smooth');
                 }
-                console.log(img.className);
+                //console.log(img.className);
                 break;
             }
         }
