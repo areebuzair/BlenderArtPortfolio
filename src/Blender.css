@@ -90,7 +90,7 @@ section .links a:hover {
   text-align: center;
 }
 
-.links a:hover {
+.links a:hover, #HUBlink:hover {
   box-shadow: 0 0 5px white,
               0 0 10px lightblue,
               0 0 15px blue,
@@ -99,7 +99,7 @@ section .links a:hover {
   color:#225;
 }
 
-.links a {
+.links a, #HUBlink {
   text-decoration: none;
   margin: 10px;
   background-color: #225;

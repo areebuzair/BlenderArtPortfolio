@@ -37,5 +37,6 @@ export default function Animations() {
                     <div className='vidDetails'><b>{vid.name}</b><br />Duration: {vid.duration}<br />Creation Date: {vid.creation_time}</div>
                 </div>)}
         </div>)}
+        <br/>
     </section>);
 }
