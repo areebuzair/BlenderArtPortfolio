@@ -4,7 +4,7 @@ export default function Navlinks() {
 
     let location = useLocation().pathname;
     location = location.replace('/BlenderArtPortfolio', '');
-    console.log(location)
+    // console.log(location)
 
     return (<div className="links">
         {location != '/' && <a href='./'>Home</a>}
