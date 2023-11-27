@@ -25,10 +25,12 @@ function enableScroll() {
 export default function StillImages() {
     const [images, setImages] = useState([]);
     const [searchParams, setSearchParams] = useSearchParams();
+    const [shouldObserve, setShouldObserve] = useState(false);
     const query = (searchParams.get('title'));
 
     useEffect(() => {
         let imgs = [...IMAGES];
+        enableScroll()
         for (let img of imgs) {
             if(img.name == query){
                 img.className = "imageZoom";
@@ -39,13 +41,18 @@ export default function StillImages() {
         }
         //console.log(imgs);
         setImages(imgs);
-    }, []);
+        setShouldObserve(true);
+    }, [searchParams]);
 
     const loadImages = (image) => {
         image.style.backgroundImage = image.dataset.src;
     };
 
     useEffect(() => {
+        if(!shouldObserve){
+            return;
+        }
+        console.log("Observer called")
         let observer = new window.IntersectionObserver(function (entries, self) {
             //console.log("entries", entries);
             //console.log("self", self);
@@ -70,7 +77,7 @@ export default function StillImages() {
         }
         if(document.querySelector(".imageZoom"))
             loadImages(document.querySelector(".imageZoom"));
-    }, [images]);
+    }, [shouldObserve]);
 
     function setClasses(e, key) {
         e.preventDefault();
