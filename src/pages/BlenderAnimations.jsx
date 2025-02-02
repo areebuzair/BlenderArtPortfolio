@@ -1,4 +1,4 @@
-import '../Blender.css';
+// import '../Blender.css';
 import Navlinks from '../components/Navigator';
 import VIDEOS from '../assets/video_data.json'
 import { useState, useEffect } from 'react';
