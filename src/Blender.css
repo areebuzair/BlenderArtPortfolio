@@ -4,17 +4,18 @@
 
 * {
   scroll-behavior: var(--scrollBehavior);
-  transition: .2s;
+  /* transition: .2s; */
   -webkit-tap-highlight-color: transparent;
 }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #0d0d0d;
+  background-color: #000000;
+  background: linear-gradient(to top, #0b0d1f, rgb(0, 0, 0));
   margin: 0;
   max-width: 100vw;
   height: 100vh;
-  transition: width 0s;
+  /* transition: width 0s; */
   /* background-image: url("../Assets/DigitalMaze2.jpg"); */
   background-attachment: fixed;
   /* background-size: 50%; */
@@ -27,36 +28,40 @@ section {
 }
 
 .Introduction {
-  /* background: linear-gradient(to top, #0b0d1f, rgba(0, 0, 0, 0.858)); */
   min-height: 100vh;
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 2rem;
   color: white;
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
     'title links'
     'logo intro'
     /* 'links links' */
     'home home'
   ;
-  gap: 2rem;
+  /* gap: 2rem; */
   place-items: center;
   grid-template-rows: 60px auto 60px;
 }
 
-.Introduction h1{
+.Introduction h1 {
   grid-area: title;
   padding: 0;
   margin: 0;
   font-size: 1rem;
+  text-align: left;
 }
 
 .Introduction .logoImage {
   grid-area: logo;
   width: 100%;
-  height: 100%;
-  /* border-radius: 50%; */
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 40vw;
+  /* border-radius: 50%;
   display: inline-block;
   background-color: black;
   background-image: url("../Assets/DoubleA.jpg");
@@ -66,7 +71,8 @@ section {
   border-right: 5px solid rgb(255, 0, 0);
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  background-clip: content-box;
+  background-clip: content-box; */
+
 }
 
 .Introduction p {
@@ -75,7 +81,8 @@ section {
   max-width: 500px;
   /* text-align-last: center; */
 }
-.Introduction .links{
+
+.Introduction .links {
   grid-area: links;
   display: flex;
   align-items: center;
@@ -83,6 +90,7 @@ section {
   width: 100%;
   gap: 2rem;
 }
+
 .Introduction a {
   display: inline-block;
   color: rgb(255, 255, 255);
@@ -105,13 +113,29 @@ section {
 .Introduction a:hover:after {
   transform: scaleX(1);
   box-shadow: 0 0 2px white,
-      0 0 3px lightblue,
-      0 0 4px blue,
-      0 0 5px darkblue;
+    0 0 3px lightblue,
+    0 0 4px blue,
+    0 0 5px darkblue;
 }
 
-.Introduction span{
+.Introduction span {
   grid-area: home;
+}
+
+/* canvas{
+  border: 1px solid white;
+} */
+@media screen and (max-width: 600px) {
+  .Introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10px;
+  }
+  .Introduction .links{
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 h1,
@@ -359,7 +383,8 @@ section .links a:hover {
   text-decoration: none;
   cursor: pointer;
 }
-.vidDisplayContainer button:hover{
+
+.vidDisplayContainer button:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
