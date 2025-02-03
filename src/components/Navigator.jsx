@@ -6,9 +6,9 @@ export default function Navlinks() {
     location = location.replace('/BlenderArtPortfolio', '');
     // console.log(location)
 
-    return (<div className="links">
+    return (<nav className="links">
         {location != '/' && <a href='./'>Home</a>}
         {location != '/Images' && <a href='./Images'>Images</a>}
         {location != '/Videos' && <a href='./Videos'>Videos</a>}
-    </div>)
+    </nav>)
 }

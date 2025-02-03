@@ -1,5 +1,3 @@
-import '../Blender.css';
-import Navlinks from '../components/Navigator';
 import IMAGES from '../assets/folder_data.json'
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
@@ -103,7 +101,6 @@ export default function StillImages() {
     }
 
     return (<section>
-        <Navlinks />
         <h1 id="SectionTitle">Images</h1>
         {(!images.length) && <h3>Loading...</h3>}
         {(images) && (<div className="imagesContainer">

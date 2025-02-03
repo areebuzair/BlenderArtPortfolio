@@ -6,12 +6,15 @@
   scroll-behavior: var(--scrollBehavior);
   /* transition: .2s; */
   -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #000000;
   background: linear-gradient(to top, #0b0d1f, rgb(0, 0, 0));
+  color: #F0F0F0;
   margin: 0;
   max-width: 100vw;
   height: 100vh;
@@ -23,27 +26,34 @@ body {
 
 section {
   background-attachment: fixed;
-  background-color: #2a2a2a;
   min-height: 100vh;
 }
-
-.Introduction {
-  min-height: 100vh;
+main{
   max-width: 1000px;
   margin: 0 auto;
+}
+.Introduction {
+  /* background-image: url('./Assets/my_collage 2.jpg'); */
+  /* background-repeat: repeat-y; */
+  /* background-size: cover; */
+  /* background-position: center 0; */
+  /* min-height: 100vh; */
   padding: 0 2rem;
   color: white;
   display: grid;
   grid-template-areas:
-    'title links'
     'logo intro'
-    /* 'links links' */
     'home home'
   ;
-  /* gap: 2rem; */
+  gap: 2rem;
   place-items: center;
-  grid-template-rows: 60px auto 60px;
+  grid-template-rows: auto 60px;
+  /* animation: bgscroll 5s linear infinite; */
 }
+/* 
+@keyframes bgscroll {
+  to{background-position: center -2048px;}
+} */
 
 .Introduction h1 {
   grid-area: title;
@@ -51,28 +61,18 @@ section {
   margin: 0;
   font-size: 1rem;
   text-align: left;
+  width: 100%;
 }
 
 .Introduction .logoImage {
   grid-area: logo;
   width: 100%;
-  height: 400px;
+  /* height: 400px; */
+  aspect-ratio: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 40vw;
-  /* border-radius: 50%;
-  display: inline-block;
-  background-color: black;
-  background-image: url("../Assets/DoubleA.jpg");
-  background-size: cover;
-  background-position: center;
-  border-left: 5px solid rgb(255, 0, 0);
-  border-right: 5px solid rgb(255, 0, 0);
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  background-clip: content-box; */
-
 }
 
 .Introduction p {
@@ -82,23 +82,27 @@ section {
   /* text-align-last: center; */
 }
 
-.Introduction .links {
-  grid-area: links;
+.links {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   width: 100%;
-  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 60px;
+  gap: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
 }
 
-.Introduction a {
+a {
   display: inline-block;
   color: rgb(255, 255, 255);
   text-decoration: none;
   position: relative;
 }
 
-.Introduction a:after {
+a:after {
   position: absolute;
   width: 100%;
   height: 1px;
@@ -110,7 +114,7 @@ section {
   transition: transform .25s;
 }
 
-.Introduction a:hover:after {
+a:hover:after {
   transform: scaleX(1);
   box-shadow: 0 0 2px white,
     0 0 3px lightblue,
@@ -146,7 +150,7 @@ h3 {
   padding: 20px;
 }
 
-section .links {
+/* section .links {
   text-align: right;
   padding: 20px;
   background-color: black;
@@ -164,7 +168,7 @@ section .links a:hover {
   background-color: #4A90E2;
   box-shadow: none;
   color: white;
-}
+} */
 
 .imagesContainer {
   display: grid;
@@ -234,7 +238,7 @@ section .links a:hover {
   background-color: rgb(0, 0, 0);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -242,6 +246,7 @@ section .links a:hover {
   cursor: pointer;
   box-sizing: border-box;
   padding: 10px;
+  transition: background-size .5s;
 }
 
 .image {
@@ -261,6 +266,7 @@ section .links a:hover {
   padding-right: 20px;
   z-index: 10000;
   transition: all 0.2s, transform 0s;
+  background-size: contain;
 }
 
 .image:hover {

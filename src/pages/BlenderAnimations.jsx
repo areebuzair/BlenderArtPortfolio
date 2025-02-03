@@ -1,5 +1,3 @@
-// import '../Blender.css';
-import Navlinks from '../components/Navigator';
 import VIDEOS from '../assets/video_data.json'
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
@@ -36,7 +34,6 @@ export default function Animations() {
     }
 
     return (<section>
-        <Navlinks />
         <h1 id="SectionTitle">Animations</h1>
         {(!videos.length) && <h3>Loading...</h3>}
         {(videos) &&
