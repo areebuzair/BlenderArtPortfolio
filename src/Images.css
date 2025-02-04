@@ -1,13 +1,9 @@
 .imagesContainer {
-    display: grid;
-    grid-template-columns: auto;
-    place-items: center;
-}
-
-.imagesContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .image,
@@ -29,9 +25,9 @@
 
 .image {
     margin: 10px;
-    width: 300px;
+    width: 250px;
     filter: brightness(.8);
-    height: 300px;
+    aspect-ratio: 1;
 }
 
 .imageZoom {
@@ -93,7 +89,7 @@
 @media only screen and (max-width:350px) {
 
     .image {
-        width: 100%;
+        width: 90%;
     }
 
     h1 {
