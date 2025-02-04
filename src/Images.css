@@ -1,0 +1,103 @@
+.imagesContainer {
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+}
+
+.imagesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image,
+.imageZoom {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 10px;
+    transition: background-size .5s;
+}
+
+.image {
+    margin: 10px;
+    width: 300px;
+    filter: brightness(.8);
+    height: 300px;
+}
+
+.imageZoom {
+    position: fixed;
+    margin: 0;
+    top: 50vh;
+    left: 50vw;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    padding-right: 20px;
+    z-index: 10000;
+    transition: all 0.2s, transform 0s;
+    background-size: contain;
+}
+
+.image:hover {
+    border-radius: 5px;
+    filter: brightness(1);
+}
+
+.image:after,
+.image:before,
+.imageZoom:after,
+.imageZoom:before {
+    display: block;
+    margin: 2px;
+    text-align: right;
+    opacity: 0;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 0px black,
+
+        -1px 1px 0px black,
+
+        1px -1px 0px black,
+
+        -1px -1px 0px black;
+    transition: .5s;
+
+}
+
+.image:before,
+.imageZoom:before {
+    content: attr(data-name);
+}
+
+.image:after,
+.imageZoom:after {
+    content: "Upload: " attr(data-time);
+}
+
+.image:hover:after,
+.image:hover:before,
+.imageZoom:hover:after,
+.imageZoom:hover:before {
+    opacity: 1;
+}
+
+@media only screen and (max-width:350px) {
+
+    .image {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 10vmin;
+    }
+
+}
