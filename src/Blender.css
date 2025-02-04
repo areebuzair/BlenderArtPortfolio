@@ -8,7 +8,6 @@
   box-sizing: border-box;
 }
 
-
 .vidSelect {
   width: auto;
   display: flex;
@@ -71,54 +70,9 @@
 
 .videosContainer {
   display: grid;
-  grid-template-columns: auto;
-  place-items: center;
-}
-
-@media only screen and (min-width:820px) {
-
-  .videosContainer {
-    grid-template-columns: auto auto;
-  }
-
-}
-
-@media only screen and (min-width:1240px) {
-
-  .videosContainer {
-    grid-template-columns: auto auto auto;
-  }
-
-}
-
-@media only screen and (min-width:1660px) {
-
-  .videosContainer {
-    grid-template-columns: auto auto auto auto;
-  }
-
-}
-
-@media only screen and (min-width:2080px) {
-
-  .videosContainer {
-    grid-template-columns: auto auto auto auto auto;
-  }
-
-}
-
-@media only screen and (min-width:2500px) {
-
-  .videosContainer {
-    grid-template-columns: auto auto auto auto auto auto;
-  }
-
-}
-
-@media only screen and (min-width:2800px) {
-
-  .videosContainer {
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
-  }
-
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
 }
