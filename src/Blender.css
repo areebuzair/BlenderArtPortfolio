@@ -18,6 +18,10 @@
   padding: 5px;
   font-size: 90%;
   box-sizing: border-box;
+  background-color: black;
+  background-attachment: fixed;
+  border-radius: inherit;
+  transition: background .5s;
 }
 
 .ThumbnailDisplay {
@@ -36,9 +40,16 @@
 }
 
 .vidSelect:hover {
-  border: 1px solid white;
-  border-radius: 5px;
+  background-image: radial-gradient(300px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.267), transparent 50%);
 }
+.video-border{
+  padding: 1px;
+  border-radius: 1px;
+  background-attachment: fixed;
+}
+.videosContainer:hover > .video-border{
+  background-image: radial-gradient(400px circle at var(--mouse-x) var(--mouse-y), white, transparent 50%);
+} 
 
 .vidSelect:hover b {
   color: rgb(220, 212, 255);

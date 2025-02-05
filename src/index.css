@@ -34,3 +34,59 @@ h3 {
     margin: 0;
     padding: 20px;
 }
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 60px;
+    gap: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+    position: relative;
+}
+.links:hover:after{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right, transparent calc(var(--mouse-x) - 100px), white var(--mouse-x), transparent calc(var(--mouse-x) + 100px));
+    content: "";
+    background-attachment: fixed;
+}
+
+a {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    position: relative;
+}
+
+a:after {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    content: "";
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform .25s;
+}
+
+a:hover:after {
+    transform: scaleX(1);
+    box-shadow: 0 0 2px white,
+        0 0 3px lightblue,
+        0 0 4px blue,
+        0 0 5px darkblue;
+}
+
+main{
+    max-width: 100%;
+    overflow-x: hidden;
+}

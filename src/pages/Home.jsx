@@ -5,9 +5,9 @@ import '../Home.css'
 
 export default function Home() {
   return (
-    <main>
+    <section className='home'>
         <Introduction />
         <Products />
-    </main>
+    </section>
   )
 }

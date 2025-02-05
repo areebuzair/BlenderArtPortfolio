@@ -101,16 +101,12 @@ export default function StillImages() {
         setImages(imgs);
     }
 
-    const handleMouseMove=(e)=>{
-        document.querySelector(":root").style.setProperty("--mouse-x", `${e.clientX}px`)
-        document.querySelector(":root").style.setProperty("--mouse-y", `${e.clientY}px`)
-        console.log(e.clientX)
-    }
+    
 
     return (<section>
         <h1 id="SectionTitle">Images</h1>
         {(!images.length) && <h3>Loading...</h3>}
-        {(images) && (<div className="imagesContainer" onMouseMove={(e)=>{handleMouseMove(e)}}>
+        {(images) && (<div className="imagesContainer">
             {images.map((img) => <div key={img.key} className='image-border'><div className={img.className} /*style={{ backgroundImage:  }}*/ data-time={img.upload_time} data-name={img.name} data-src={`url(./BlenderArts/${encodeURI(img.name)}.jpg)`} onClick={(e) => { setClasses(e, img.key) }}></div></div>)}
         </div>)}
     </section>);

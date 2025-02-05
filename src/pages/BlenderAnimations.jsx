@@ -29,7 +29,7 @@ export default function Animations() {
         e.preventDefault();
         setVidSRC(URL);
         setTitle(name);
-        setSearchParams({title : name});
+        setSearchParams({ title: name });
         document.getElementById("vidTitle").scrollIntoView(true);
     }
 
@@ -39,16 +39,18 @@ export default function Animations() {
         {(videos) &&
             <div className='vidDisplayContainer'>
                 <h2 id="vidTitle">{title}</h2>
-                <video id="vidDisplay" controls controlsList="nodownload" loop src={vidSRC} onContextMenu={(e) => { e.preventDefault(); }}></video><br/>
+                <video id="vidDisplay" controls controlsList="nodownload" loop src={vidSRC} onContextMenu={(e) => { e.preventDefault(); }}></video><br />
                 {/* {vidSRC && <button type="button">share</button>} */}
             </div>
         }
         {(videos) && (<div className="videosContainer">
             {videos.map((vid) =>
-                <div className='vidSelect' key={vid.key} onClick={(e) => { setVideo(e, vid.URL, vid.name) }}>
-                    <div className='ThumbnailDisplay' style={{ backgroundImage: `url(./AnimThumbnails/${encodeURI(vid.name)}.jpg)` }} >
+                <div key={vid.key} className='video-border'>
+                    <div className='vidSelect' onClick={(e) => { setVideo(e, vid.URL, vid.name) }}>
+                        <div className='ThumbnailDisplay' style={{ backgroundImage: `url(./AnimThumbnails/${encodeURI(vid.name)}.jpg)` }} >
+                        </div>
+                        <div className='vidDetails'><b>{vid.name}</b><br />Duration: {vid.duration}<br />Creation Date: {vid.creation_time}</div>
                     </div>
-                    <div className='vidDetails'><b>{vid.name}</b><br />Duration: {vid.duration}<br />Creation Date: {vid.creation_time}</div>
                 </div>)}
         </div>)}
         <br />
