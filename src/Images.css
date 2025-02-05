@@ -4,6 +4,7 @@
     justify-content: center;
     max-width: 1400px;
     margin: 0 auto;
+    gap: .5rem;
 }
 
 .image,
@@ -24,11 +25,21 @@
 }
 
 .image {
-    margin: 10px;
     width: 250px;
-    filter: brightness(.8);
+    filter: brightness(.6) saturate(0.6);
     aspect-ratio: 1;
+    border-radius: inherit;
+    transition: filter 0.5s;
 }
+
+.image-border{
+    padding: 1px;
+    border-radius: 1px;
+    background-attachment: fixed;
+}
+.imagesContainer:hover > .image-border{
+    background-image: radial-gradient(400px circle at var(--mouse-x) var(--mouse-y), white, transparent 50%);
+} 
 
 .imageZoom {
     position: fixed;
@@ -45,8 +56,7 @@
 }
 
 .image:hover {
-    border-radius: 5px;
-    filter: brightness(1);
+    filter: brightness(1) saturate(1);
 }
 
 .image:after,

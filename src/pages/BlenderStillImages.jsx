@@ -31,7 +31,7 @@ export default function StillImages() {
         let imgs = [...IMAGES];
         enableScroll()
         for (let img of imgs) {
-            if(img.name == query){
+            if (img.name == query) {
                 img.className = "imageZoom";
                 disableScroll();
             }
@@ -48,7 +48,7 @@ export default function StillImages() {
     };
 
     useEffect(() => {
-        if(!shouldObserve){
+        if (!shouldObserve) {
             return;
         }
         console.log("Observer called")
@@ -74,7 +74,7 @@ export default function StillImages() {
         for (let elem of imgElements) {
             observer.observe(elem);
         }
-        if(document.querySelector(".imageZoom"))
+        if (document.querySelector(".imageZoom"))
             loadImages(document.querySelector(".imageZoom"));
     }, [shouldObserve]);
 
@@ -88,7 +88,7 @@ export default function StillImages() {
                 img.className = (img.className == "image") ? "imageZoom" : "image";
                 if (img.className == "imageZoom") {
                     disableScroll();
-                    setSearchParams({title : img.name});
+                    setSearchParams({ title: img.name });
                 }
                 else {
                     enableScroll();
@@ -101,11 +101,17 @@ export default function StillImages() {
         setImages(imgs);
     }
 
+    const handleMouseMove=(e)=>{
+        document.querySelector(":root").style.setProperty("--mouse-x", `${e.clientX}px`)
+        document.querySelector(":root").style.setProperty("--mouse-y", `${e.clientY}px`)
+        console.log(e.clientX)
+    }
+
     return (<section>
         <h1 id="SectionTitle">Images</h1>
         {(!images.length) && <h3>Loading...</h3>}
-        {(images) && (<div className="imagesContainer">
-            {images.map((img) => <div key={img.key} className={img.className} /*style={{ backgroundImage:  }}*/ data-time={img.upload_time} data-name={img.name} data-src={`url(./BlenderArts/${encodeURI(img.name)}.jpg)`} onClick={(e) => { setClasses(e, img.key) }}></div>)}
+        {(images) && (<div className="imagesContainer" onMouseMove={(e)=>{handleMouseMove(e)}}>
+            {images.map((img) => <div key={img.key} className='image-border'><div className={img.className} /*style={{ backgroundImage:  }}*/ data-time={img.upload_time} data-name={img.name} data-src={`url(./BlenderArts/${encodeURI(img.name)}.jpg)`} onClick={(e) => { setClasses(e, img.key) }}></div></div>)}
         </div>)}
     </section>);
 }

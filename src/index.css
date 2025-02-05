@@ -1,5 +1,7 @@
 :root {
     --scrollBehavior: smooth;
+    --mouse-x: -500px;
+    --mouse-y: -500px
 }
 
 * {
