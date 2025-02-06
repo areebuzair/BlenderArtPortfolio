@@ -9,7 +9,7 @@ export default function App() {
   const handleMouseMove = (e) => {
     document.querySelector(":root").style.setProperty("--mouse-x", `${e.clientX}px`)
     document.querySelector(":root").style.setProperty("--mouse-y", `${e.clientY}px`)
-    console.log(e.clientX)
+    // console.log(e.clientX)
   }
   return <>
     <BrowserRouter>
