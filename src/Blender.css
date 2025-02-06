@@ -21,17 +21,7 @@
   background-color: black;
   background-attachment: fixed;
   border-radius: inherit;
-  position: relative;
-}
-.vidSelect:after {
-  background-image: radial-gradient(300px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.267), transparent 50%);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
-  top: 0;
-  left: 0;
-  content: "";
+  transition: background .5s;
 }
 
 .ThumbnailDisplay {
@@ -49,13 +39,16 @@
   color: rgb(255, 255, 255);
 }
 
+.vidSelect:hover {
+  background-image: radial-gradient(300px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.267), transparent 50%);
+}
 .video-border{
   padding: 1px;
   border-radius: 1px;
   background-attachment: fixed;
 }
 .videosContainer:hover > .video-border{
-  background-image: radial-gradient(500px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.468), transparent 50%);
+  background-image: radial-gradient(400px circle at var(--mouse-x) var(--mouse-y), white, transparent 50%);
 } 
 
 .vidSelect:hover b {
