@@ -55,7 +55,7 @@
   background-attachment: fixed;
 }
 .videosContainer:hover > .video-border{
-  background-image: radial-gradient(400px circle at var(--mouse-x) var(--mouse-y), white, transparent 50%);
+  background-image: radial-gradient(500px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.468), transparent 50%);
 } 
 
 .vidSelect:hover b {
