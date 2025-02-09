@@ -38,7 +38,7 @@
     background-attachment: fixed;
 }
 .imagesContainer:hover > .image-border{
-    background-image: radial-gradient(400px circle at var(--mouse-x) var(--mouse-y), white, transparent 50%);
+    background-image: radial-gradient(400px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.658), transparent 50%);
 } 
 
 .imageZoom {
