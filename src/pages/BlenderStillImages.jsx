@@ -88,11 +88,11 @@ export default function StillImages() {
                 img.className = (img.className == "image") ? "imageZoom" : "image";
                 if (img.className == "imageZoom") {
                     disableScroll();
-                    setSearchParams({ title: img.name });
+                    setSearchParams({ title: img.name },  {replace: true});
                 }
                 else {
                     enableScroll();
-                    setSearchParams();
+                    setSearchParams({}, {replace: true});
                 }
                 break;
             }

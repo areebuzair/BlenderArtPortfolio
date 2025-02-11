@@ -21,25 +21,34 @@
     cursor: pointer;
     box-sizing: border-box;
     padding: 10px;
-    transition: background-size .5s;
 }
 
 .image {
     width: 250px;
-    filter: brightness(.6) saturate(0.6);
     aspect-ratio: 1;
     border-radius: inherit;
     transition: filter 0.5s;
 }
 
-.image-border{
+.imagesContainer:has(.image:hover) .image{
+    filter: brightness(.4) saturate(0.6) contrast(1.2);
+}
+.imagesContainer:has(.image:hover) .image:hover{
+    filter: brightness(1) saturate(1);
+}
+.image:hover {
+    filter: brightness(1) saturate(1);
+}
+
+.image-border {
     padding: 1px;
     border-radius: 1px;
     background-attachment: fixed;
 }
-.imagesContainer:hover > .image-border{
-    background-image: radial-gradient(400px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.658), transparent 50%);
-} 
+
+.image-border {
+    background-image: radial-gradient(400px circle at var(--mouse-x) var(--mouse-y), white, transparent 50%);
+}
 
 .imageZoom {
     position: fixed;
@@ -51,12 +60,8 @@
     transform: translate(-50%, -50%);
     padding-right: 20px;
     z-index: 10000;
-    transition: all 0.2s, transform 0s;
+    /* transition: all 0.2s, transform 0s; */
     background-size: contain;
-}
-
-.image:hover {
-    filter: brightness(1) saturate(1);
 }
 
 .image:after,

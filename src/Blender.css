@@ -40,7 +40,7 @@
 }
 
 .vidSelect:hover {
-  background-image: radial-gradient(300px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.126), transparent 50%);
+  background-image: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.126), transparent 50%);
 }
 .video-border{
   padding: 1px;
@@ -70,7 +70,6 @@
   font-size: 120%;
   /* font-weight: lighter; */
   border: 1px solid white;
-  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   cursor: pointer;
 }
