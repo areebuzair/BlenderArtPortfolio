@@ -111,7 +111,7 @@ export default function StillImages() {
         <h1 id="SectionTitle">Images</h1>
         {(!images.length) && <h3>Loading...</h3>}
         {(images) && (<div className="imagesContainer">
-            {images.map((img) => <div key={img.key} className='image-border'><div className={img.className} /*style={{ backgroundImage:  }}*/ data-time={img.upload_time} data-name={img.name} data-src={`./BlenderArts/${encodeURI(img.name)}.jpg`} onClick={(e) => { setClasses(e, img.key) }}></div></div>)}
+            {images.map((img) => <div key={img.key} className='image-border'><div className={img.className} /*style={{ backgroundImage:  }}*/ data-time={img.upload_time} data-name={img.name} data-src={`./BlenderArts/${encodeURI(img.name)}${img.type}`} onClick={(e) => { setClasses(e, img.key) }}></div></div>)}
         </div>)}
     </section>);
 }
