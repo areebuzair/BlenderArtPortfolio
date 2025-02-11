@@ -27,7 +27,7 @@
 
 .Introduction .logoImage {
     grid-area: logo;
-    width: 100%;
+    width: 400px;
     /* height: 400px; */
     aspect-ratio: 1;
     display: flex;

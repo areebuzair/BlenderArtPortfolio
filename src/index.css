@@ -110,6 +110,7 @@ main:before {
     left: var(--mouse-x);
     animation: spin 5s linear infinite;
     opacity: .9;
+    transition: opacity .3s;
 }
 
 main:after {
@@ -121,6 +122,9 @@ main:after {
     top: 0;
     left: 0;
     backdrop-filter: blur(calc(var(--size)/1.5));
+}
+main:has(iframe:hover):before{
+    opacity: 0;
 }
 
 @keyframes spin {
