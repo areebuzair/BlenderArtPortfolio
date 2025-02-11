@@ -46,10 +46,10 @@ export default function Animations() {
         {(videos) && (<div className="videosContainer">
             {videos.map((vid) =>
                 <div key={vid.key} className='video-border'>
-                    <div className='vidSelect' onClick={(e) => { setVideo(e, vid.URL, vid.name) }}>
-                        <div className='ThumbnailDisplay' style={{ backgroundImage: `url(./AnimThumbnails/${encodeURI(vid.name)}.jpg)` }} >
+                    <div className='vid-card' onClick={(e) => { setVideo(e, vid.URL, vid.name) }}>
+                        <div className='ThumbnailDisplay' style={{ backgroundImage: `url(./AnimThumbnails/${encodeURI(vid.name)}.jpg)` }} data-duration={vid.duration}>
                         </div>
-                        <div className='vidDetails'><b>{vid.name}</b><br />Duration: {vid.duration}<br />Creation Date: {vid.creation_time}</div>
+                        <div className='vidDetails'><b>{vid.name}</b><br /><small>{vid.creation_time}</small></div>
                     </div>
                 </div>)}
         </div>)}

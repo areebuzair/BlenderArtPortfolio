@@ -8,14 +8,14 @@
   box-sizing: border-box;
 }
 
-.vidSelect {
+.vid-card {
   width: auto;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
   cursor: pointer;
-  padding: 5px;
+  /* padding: 5px; */
   font-size: 90%;
   box-sizing: border-box;
   background-color: black;
@@ -25,7 +25,7 @@
 }
 
 .ThumbnailDisplay {
-  margin: 10px;
+  margin-right: 10px;
   width: 100px;
   height: 100px;
   color: white;
@@ -33,13 +33,24 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  position: relative;
+}
+
+.ThumbnailDisplay:after{
+  content: attr(data-duration);
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  color:#F0F0F0;
+  background-color: rgba(0, 0, 0, 0.575);
+  padding: 2px;
 }
 
 .vidDetails {
   color: rgb(255, 255, 255);
 }
 
-.vidSelect:hover {
+.vid-card:hover {
   background-image: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.126), transparent 50%);
 }
 .video-border{
@@ -51,7 +62,7 @@
   background-image: radial-gradient(400px circle at var(--mouse-x) var(--mouse-y), white, transparent 50%);
 } 
 
-.vidSelect:hover b {
+.vid-card:hover b {
   color: rgb(220, 212, 255);
 }
 

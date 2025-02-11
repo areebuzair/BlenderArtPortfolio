@@ -44,7 +44,11 @@ export default function StillImages() {
     }, [searchParams]);
 
     const loadImages = (image) => {
-        image.style.backgroundImage = image.dataset.src;
+        let img = new Image();
+        img.src = image.dataset.src;
+        img.onload = () => {
+            image.style.backgroundImage = `url(${image.dataset.src}`;
+        }
     };
 
     useEffect(() => {
@@ -88,11 +92,11 @@ export default function StillImages() {
                 img.className = (img.className == "image") ? "imageZoom" : "image";
                 if (img.className == "imageZoom") {
                     disableScroll();
-                    setSearchParams({ title: img.name },  {replace: true});
+                    setSearchParams({ title: img.name }, { replace: true });
                 }
                 else {
                     enableScroll();
-                    setSearchParams({}, {replace: true});
+                    setSearchParams({}, { replace: true });
                 }
                 break;
             }
@@ -101,13 +105,13 @@ export default function StillImages() {
         setImages(imgs);
     }
 
-    
+
 
     return (<section>
         <h1 id="SectionTitle">Images</h1>
         {(!images.length) && <h3>Loading...</h3>}
         {(images) && (<div className="imagesContainer">
-            {images.map((img) => <div key={img.key} className='image-border'><div className={img.className} /*style={{ backgroundImage:  }}*/ data-time={img.upload_time} data-name={img.name} data-src={`url(./BlenderArts/${encodeURI(img.name)}.jpg)`} onClick={(e) => { setClasses(e, img.key) }}></div></div>)}
+            {images.map((img) => <div key={img.key} className='image-border'><div className={img.className} /*style={{ backgroundImage:  }}*/ data-time={img.upload_time} data-name={img.name} data-src={`./BlenderArts/${encodeURI(img.name)}.jpg`} onClick={(e) => { setClasses(e, img.key) }}></div></div>)}
         </div>)}
     </section>);
 }
