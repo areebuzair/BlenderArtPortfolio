@@ -1,3 +1,13 @@
+.videosContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
+  place-content: center;
+}
+
 #vidTitle {
   color: white;
 }
@@ -24,6 +34,25 @@
   transition: background .5s;
 }
 
+.vid-card:hover {
+  background-image: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.126), transparent 50%);
+}
+
+.vid-card:hover b {
+  color: rgb(220, 212, 255);
+}
+
+.video-border {
+  padding: 1px;
+  border-radius: 1px;
+  background-attachment: fixed;
+  max-width: 400px;
+}
+
+.videosContainer:hover>.video-border {
+  background-image: radial-gradient(400px circle at var(--mouse-x) var(--mouse-y), white, transparent 50%);
+}
+
 .ThumbnailDisplay {
   margin-right: 10px;
   width: 100px;
@@ -36,12 +65,12 @@
   position: relative;
 }
 
-.ThumbnailDisplay:after{
+.ThumbnailDisplay:after {
   content: attr(data-duration);
   position: absolute;
   bottom: 2px;
   right: 2px;
-  color:#F0F0F0;
+  color: #F0F0F0;
   background-color: rgba(0, 0, 0, 0.575);
   padding: 2px;
 }
@@ -50,34 +79,22 @@
   color: rgb(255, 255, 255);
 }
 
-.vid-card:hover {
-  background-image: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.126), transparent 50%);
-}
-.video-border{
-  padding: 1px;
-  border-radius: 1px;
-  background-attachment: fixed;
-}
-.videosContainer:hover > .video-border{
-  background-image: radial-gradient(400px circle at var(--mouse-x) var(--mouse-y), white, transparent 50%);
-} 
 
-.vid-card:hover b {
-  color: rgb(220, 212, 255);
-}
 
 .vidDisplayContainer {
-  text-align: center;
+  text-align: left;
   padding: 10px;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .vidDisplayContainer button {
   background-color: rgba(0, 0, 0, 0.3);
   color: #F0F0F0;
-  padding: 5px;
+  padding: 5px 10px;
   margin: 10px;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 120%;
   /* font-weight: lighter; */
   border: 1px solid white;
@@ -87,13 +104,4 @@
 
 .vidDisplayContainer button:hover {
   background-color: rgba(0, 0, 0, 0.7);
-}
-
-.videosContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 1rem;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 1rem;
 }
