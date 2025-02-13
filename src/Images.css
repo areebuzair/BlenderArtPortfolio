@@ -32,7 +32,7 @@
 }
 
 .imagesContainer:has(.image:hover) .image{
-    filter: brightness(.7) saturate(0.6) contrast(1.2);
+    filter: brightness(.9) saturate(0.6) contrast(1.1);
 }
 .imagesContainer:has(.image:hover) .image:hover, .image:hover{
     filter: brightness(1) saturate(1);

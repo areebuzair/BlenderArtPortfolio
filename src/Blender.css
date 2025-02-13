@@ -1,29 +1,30 @@
 .videosContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 1rem;
-  place-content: center;
+  gap: .5rem;
 }
+
 
 #vidTitle {
   color: white;
 }
 
 #vidDisplay {
-  max-width: 80%;
+  max-width: 90%;
   max-height: 80vmin;
   box-sizing: border-box;
 }
 
 .vid-card {
-  width: auto;
+  width: 100%;
+  /* max-width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-direction: row;
+  flex-direction: row; */
   cursor: pointer;
   /* padding: 5px; */
   font-size: 90%;
@@ -46,7 +47,13 @@
   padding: 1px;
   border-radius: 1px;
   background-attachment: fixed;
-  max-width: 400px;
+  width: 300px;
+  max-width: 90%;
+  /* aspect-ratio: 3/4; */
+  /* background-color: #333; */
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .videosContainer:hover>.video-border {
@@ -54,14 +61,13 @@
 }
 
 .ThumbnailDisplay {
-  margin-right: 10px;
-  width: 100px;
-  height: 100px;
+  width: 100%;
   color: white;
+  aspect-ratio: 4/3;
   background-color: rgb(0, 0, 0);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   position: relative;
 }
 
@@ -77,14 +83,27 @@
 
 .vidDetails {
   color: rgb(255, 255, 255);
+  padding: 4px 4px 8px 8px;
+  text-align: right;
 }
 
 
 
 .vidDisplayContainer {
-  text-align: left;
+  text-align: center;
   padding: 10px;
+  max-width: 1600px;
+  /* margin: 0 auto; */
+}
+
+.vidDisplayContainer h5, .vidDisplayContainer h6{
+  text-align: left;
   max-width: 80%;
+  margin: 0 auto;
+}
+
+.vidDisplayContainer article{
+  width: fit-content;
   margin: 0 auto;
 }
 
@@ -95,7 +114,7 @@
   margin: 10px;
   border: none;
   border-radius: 5px;
-  font-size: 120%;
+  /* font-size: 120%; */
   /* font-weight: lighter; */
   border: 1px solid white;
   text-decoration: none;
@@ -105,3 +124,12 @@
 .vidDisplayContainer button:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
+
+
+/* @media only screen and (max-width:450px) {
+
+  .video-border {
+    max-width: 70%;
+  }
+
+} */

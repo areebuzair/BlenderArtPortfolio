@@ -38,10 +38,12 @@ export default function Animations() {
         {(!videos.length) && <h3>Loading...</h3>}
         {(videos) &&
             <div className='vidDisplayContainer'>
-                <video id="vidDisplay" controls controlsList="nodownload" loop src={vidSRC} onContextMenu={(e) => { e.preventDefault(); }}></video><br />
                 <h2 id="vidTitle">{selectedVidData.name}</h2>
-                <h6>{selectedVidData.creation_time}</h6>
-                {vidSRC && <button type="button">share</button>}
+                {vidSRC && <article>
+                    <video id="vidDisplay" controls controlsList="nodownload" loop src={vidSRC} onContextMenu={(e) => { e.preventDefault(); }}></video><br />
+                    <h5>J. M Areeb Uzair</h5>
+                    <h6>{selectedVidData.creation_time}</h6>
+                </article>}
             </div>
         }
         {(videos) && (<div className="videosContainer">
