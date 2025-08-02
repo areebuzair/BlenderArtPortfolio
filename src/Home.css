@@ -37,7 +37,7 @@
     position: relative;
 }
 
-.logoImage iframe {
+.logoImage iframe, .logoImage img {
     position: absolute;
     top: 0;
     left: 0;
@@ -46,7 +46,9 @@
     height: 100%;
     box-sizing: border-box;
 }
-
+.logoImage img{
+    pointer-events: none;
+}
 .Introduction p {
     grid-area: intro;
     text-align: justify;

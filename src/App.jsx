@@ -19,7 +19,7 @@ export default function App() {
       <main onMouseMove={(e) => { handleMouseMove(e) }} className={('onmousemove' in document) && 'MouseAvailable'}>
         <Navlinks />
         <Routes>
-          <Route path="/BlenderArtPortfolio/" element={<Home />} />
+          <Route path="/BlenderArtPortfolio/" element={<Home isReduced={isReduced}/>} />
           <Route path="/BlenderArtPortfolio/Images" element={<StillImages />} />
           <Route path="/BlenderArtPortfolio/Videos" element={<Animations />} />
         </Routes>

@@ -5,7 +5,7 @@ import Products from '../components/Products'
 import GALLERY from '../assets/Gallery.webp'
 import '../Home.css'
 
-export default function Home() {
+export default function Home({isReduced}) {
 
   const vidControl = (e) => {
     const video = e.target;
@@ -21,7 +21,7 @@ export default function Home() {
 
   return (
     <section className='home'>
-      <Introduction />
+      <Introduction isReduced={isReduced}/>
       {/* <Products /> */}
       <div className='home-articles-container'>
         <article>
@@ -38,9 +38,8 @@ export default function Home() {
           <h2>My Addons</h2>
           <div className='home-articles-media-container'><video src="./Assets/MPB_Demo.mkv" onClick={vidControl} loop={true} controlsList="nodownload" onContextMenu={(e) => { e.preventDefault(); }} /></div>
           <p>Check out my Addons on GitHub! Compatible with Blender 4.1 and above (<i>tested upto 4.4</i>)
-
             <ul style={{ paddingLeft: "2vmin", listStyleType: "none" }}>
-              <li><a href="https://github.com/areebuzair/mesh-particle-blend" target='_blank'>Mesh Particle Blend:</a> A Blender addon that creates a point cloud that blends between two meshes using Geometry Nodes</li>
+              <li><a href="https://github.com/areebuzair/mesh-particle-blend" target='_blank'>Mesh Particle Blend:</a> A Blender addon that creates a point cloud that blends between two meshes using Geometry Nodes.</li>
               <li><a href="https://github.com/areebuzair/blender-plugin" target='_blank'>Sketchfab Plugin:</a> A fork of the official Sketchfab addon which automatically generates an attribution file for imported models.</li>
             </ul>
           </p>
