@@ -125,7 +125,8 @@ main {
     left: 0;
     backdrop-filter: blur(calc(var(--size)/1.5));
 }
-main:has(iframe:hover):before{
+
+main:has(iframe:hover):before {
     opacity: 0;
 }
 
@@ -136,5 +137,23 @@ main:has(iframe:hover):before{
 
     to {
         transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *:before,
+    *:after {
+        transition-duration: 0s !important;
+    }
+
+    .MouseAvailable:after,
+    .MouseAvailable:before {
+        display: none !important;
+    }
+
+    .home-articles-container article h2 {
+        color: white !important;
     }
 }
