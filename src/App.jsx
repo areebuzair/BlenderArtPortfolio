@@ -13,7 +13,7 @@ export default function App() {
   }
   return <>
     <BrowserRouter>
-      <main onMouseMove={(e)=>{handleMouseMove(e)}}>
+      <main onMouseMove={(e)=>{handleMouseMove(e)}} className={('onmousemove' in document) && 'MouseAvailable'}>
         <Navlinks />
         <Routes>
           <Route path="/BlenderArtPortfolio/" element={<Home />} />

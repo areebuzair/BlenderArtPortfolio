@@ -17,7 +17,7 @@
 
 body {
     background-color: #000000;
-    background: linear-gradient(to top, #0b0d1f, rgb(0, 0, 0));
+    background: linear-gradient(to top, #26262a, rgb(0, 0, 0));
     color: #F0F0F0;
     margin: 0;
     max-width: 100vw;
@@ -28,6 +28,7 @@ body {
 section {
     background-attachment: fixed;
     min-height: 100vh;
+    padding-bottom: 10vmin;
 }
 
 h1,
@@ -98,11 +99,11 @@ main {
     --size: 100px;
 }
 
-main:before {
+.MouseAvailable:before {
     content: "";
     width: var(--size);
     height: var(--size);
-    background-image: linear-gradient(to right, rgb(0, 145, 255), rgb(0, 128, 45));
+    background-image: linear-gradient(to right, rgb(117, 159, 191), rgb(68, 85, 74));
     border-radius: 50%;
     transform: translate(-50%, -50%);
     z-index: -3;
@@ -110,11 +111,11 @@ main:before {
     top: var(--mouse-y);
     left: var(--mouse-x);
     animation: spin 5s linear infinite;
-    opacity: .9;
+    opacity: .6;
     transition: opacity .3s;
 }
 
-main:after {
+.MouseAvailable:after {
     content: "";
     width: 100vw;
     height: 100vh;
