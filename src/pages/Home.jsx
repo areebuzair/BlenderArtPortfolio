@@ -31,10 +31,10 @@ export default function Home({ isReduced }) {
         </article>
         <article>
           <h2>Animations</h2>
-          <div className='home-articles-media-container'><video src="https://dl.dropbox.com/scl/fi/cfon2k6hvu6gp4jmqm07h/Mobius-Strip.mp4?rlkey=6a8b32o55kedarjwj2o5d7g7l&dl=0" onClick={vidControl}  controlsList="nodownload" onContextMenu={(e) => { e.preventDefault(); }} /></div>
+          <div className='home-articles-media-container'><video src="https://dl.dropbox.com/scl/fi/cfon2k6hvu6gp4jmqm07h/Mobius-Strip.mp4?rlkey=6a8b32o55kedarjwj2o5d7g7l&dl=0" onClick={vidControl} loop controlsList="nodownload" onContextMenu={(e) => { e.preventDefault(); }} /></div>
           <p>Check out some of my <a href="./Videos">animations</a>.</p>
         </article>
-        <article className='two-column'>
+        <article className='two-column' id="addons">
           <h2>My Addons</h2>
           <div className='home-articles-media-container'><video src="./Assets/MPB_Demo.mp4" onClick={vidControl} loop={true} controlsList="nodownload" onContextMenu={(e) => { e.preventDefault(); }} /></div>
           <p>Check out my Addons on GitHub! Compatible with Blender 4.1 and above (<i>tested upto 4.4</i>).
