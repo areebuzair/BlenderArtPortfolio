@@ -17,14 +17,14 @@
 
 html,
 body {
-    background: #26262a;
+    background: rgb(2, 6, 24);
     margin: 0;
     min-height: 100%;
     overscroll-behavior: none;
 }
 
 body {
-    background-color: #26262a;
+    background-color: rgb(2, 6, 24);
     background-image: radial-gradient(circle at top, transparent 5%, rgb(2, 6, 24) 50%), linear-gradient(135deg, rgb(2, 6, 24) 10%, rgb(29, 41, 61) 10% 40%, rgb(2, 6, 24) 40% 60%, rgb(29, 41, 61) 60% 90%, rgb(2, 6, 24) 90%);
     background-size: cover, 10px 10px;
     background-repeat: no-repeat, repeat;
