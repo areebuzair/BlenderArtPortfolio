@@ -25,11 +25,13 @@ body {
 
 body {
     background-color: #26262a;
-    background: linear-gradient(to top, #26262a, rgb(0, 0, 0));
+    background-image: radial-gradient(circle at top, transparent 5%, rgb(2, 6, 24) 70%), linear-gradient(135deg, rgb(2, 6, 24) 10%, rgb(29, 41, 61) 10% 40%, rgb(2, 6, 24) 40% 60%, rgb(29, 41, 61) 60% 90%, rgb(2, 6, 24) 90%);
+    background-size: cover, 10px 10px;
+    background-repeat: no-repeat, repeat;
     color: #F0F0F0;
     margin: 0;
     max-width: 100vw;
-    background-size: cover;
+    /* background-size: cover; */
     background-attachment: fixed;
 }
 

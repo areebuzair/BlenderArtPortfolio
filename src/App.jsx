@@ -7,7 +7,7 @@ import './Blender.css'
 import { useEffect, useState } from 'react'
 
 export default function App() {
-  const [isReduced, setIsReduced] = useState(true);
+  const [isReduced, setIsReduced] = useState(false);
   useEffect(() => {
     setIsReduced(window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true);
   })
