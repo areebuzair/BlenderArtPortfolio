@@ -31,7 +31,7 @@ export default function Home({ isReduced }) {
         </article>
         <article>
           <h2>Animations</h2>
-          <div className='home-articles-media-container'><video src="https://dl.dropbox.com/scl/fi/cfon2k6hvu6gp4jmqm07h/Mobius-Strip.mp4?rlkey=6a8b32o55kedarjwj2o5d7g7l&dl=0" onClick={vidControl} loop controlsList="nodownload" onContextMenu={(e) => { e.preventDefault(); }} /></div>
+          <div className='home-articles-media-container'><video src="https://www.dropbox.com/scl/fi/cfon2k6hvu6gp4jmqm07h/Mobius-Strip.mp4?rlkey=6a8b32o55kedarjwj2o5d7g7l&raw=1" onClick={vidControl} loop controlsList="nodownload" onContextMenu={(e) => { e.preventDefault(); }} style={{aspectRatio: 16/9}} /></div>
           <p>Check out some of my <a href="./Videos">animations</a>.</p>
         </article>
         <article className='two-column' id="addons">
@@ -48,7 +48,7 @@ export default function Home({ isReduced }) {
       <div className='mainVideo'>
         <h2>First Flight</h2>
         <h5>First Short Film</h5>
-        <video controls controlsList="nodownload" src="https://dl.dropbox.com/scl/fi/xu43vxw3n7nwp1poz11pw/First-Flight.mp4?rlkey=zi7z1bzeyvye2anewaxryy42a&amp;dl=0" onContextMenu={(e) => e.preventDefault()}></video>
+        <video controls controlsList="nodownload" src="https://www.dropbox.com/scl/fi/xu43vxw3n7nwp1poz11pw/First-Flight.mp4?rlkey=zi7z1bzeyvye2anewaxryy42a&amp;raw=1" onContextMenu={(e) => e.preventDefault()}></video>
       </div>
     </section>
   )

@@ -10,7 +10,6 @@ export default function Animations() {
     const [vidSRC, setVidSRC] = useState('');
 
     useEffect(() => {
-        console.log(window.location.href)
         let vids = [...VIDEOS];
         setVideos(vids);
         if (query) {
